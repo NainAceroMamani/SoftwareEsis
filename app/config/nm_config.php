@@ -6,13 +6,13 @@
 
     define('LANG','es');                                                            /* Language */
 
-    define('BASEPATH', IS_LOCAL ? '/NUAMI/' : '__EL BASEPATH EN PRODUCCIÓN__');
+    define('BASEPATH', IS_LOCAL ? '/ciis/' : '__EL BASEPATH EN PRODUCCIÓN__');
 
     define('AUTH_SALT', 'NuamiFramework<3');                                        /* Sal del Sistema */
 
-    define('PORT','8080');
+    define('PORT','80');
 
-    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/NUAMI/' : '__URL EN PRODUCCIÓN_');
+    define('URL', IS_LOCAL ? 'http://127.0.0.1:'.PORT.'/ciis/' : '__URL EN PRODUCCIÓN_');
 
     // rutas de directorios y archivos =>
 

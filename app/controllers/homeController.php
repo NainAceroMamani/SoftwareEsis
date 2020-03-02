@@ -8,7 +8,7 @@
             $data =
             [
                 'title' => 'Nuami Framework',
-                'bg'    =>  'dark'
+                'bg'    =>  'white'
             ];
             View::render('Nuami', $data);
         }
