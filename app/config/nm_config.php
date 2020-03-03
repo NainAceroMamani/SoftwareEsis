@@ -42,19 +42,19 @@
 
     // credenciales base de datos   =>  desarrollo
     define('LDB_ENGINE' ,   'mysql');
-    define('LDB_HOST'   ,   'localhost');
-    define('LDB_NAME'   ,   'testNuami');
-    define('LDB_USER'   ,   'root');
-    define('LDB_PASS'   ,   '');
+    define('LDB_HOST'   ,   'www.ciistacna.com');
+    define('LDB_NAME'   ,   'owltie_ciistacna_02');
+    define('LDB_USER'   ,   'owltie_ciis00');
+    define('LDB_PASS'   ,   'W}H]5,3B1UC4');
     define('LDB_CHARSET',   'utf8');
 
     // credenciales base de datos   =>  producción
     define('DB_ENGINE' ,   'mysql');
-    define('DB_HOST'   ,   'localhost');
-    define('DB_NAME'   ,   '__REMOTE DB__');
-    define('DB_USER'   ,   '__REMOTE DB__');
-    define('DB_PASS'   ,   '__REMOTE DB__');
-    define('DB_CHARSET',   '__REMOTE CHARTSET__');
+    define('DB_HOST'   ,   'www.ciistacna.com');
+    define('DB_NAME'   ,   'owltie_ciistacna_02');
+    define('DB_USER'   ,   'owltie_ciis00');
+    define('DB_PASS'   ,   'W}H]5,3B1UC4');
+    define('DB_CHARSET',   'utf8');
 
     /**
      * Controlador Defecto

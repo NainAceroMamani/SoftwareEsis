@@ -1,14 +1,25 @@
 <?php require_once INCLUDES.'inc_header.php'; ?>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12 text-center offset-md-12">
-      <h1 style="margin-top:30%">Ciis 2020</h1>
-      <div class="mt-5">
-        <p class="text-muted">Desarrollado con Amor <i class="fas fa-heart text-danger"></i> </p>
-      </div>
-    </div>
-  </div>
-</div>
+<main id="home">
+        <section>
+            <div id="anc_topics" class="bg-gray-translucent">
+                <div class="container-outer">
+                    <div class="container">
+                      <div class="soft-double-ends" style="margin-top: 15%">
+                              <h2
+                                  class="heading-block ff-thin text-huge fc-inverse text-center text-shadow soft-top bd-inverse-top text-normal">
+                                  Noticias</h2>
+                          </div>
+                          <h1>...</h1>
+                          <h1>...</h1>
+                          <h1>...</h1>
+                          <h1>...</h1>
+                          <h1>...</h1>
+                          <h1>...</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 <?php require_once INCLUDES.'inc_footer.php'; ?>

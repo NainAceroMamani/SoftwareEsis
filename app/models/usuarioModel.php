@@ -3,31 +3,50 @@
     class usuarioModel extends Model{
 
         public $id;
-        public $name;
+        public $firstName;
+        public $lastName;
+        public $dni;
+        public $cellPhone;
         public $email;
-        public $password;
-        public $created_ad;
-
+        public $yearStudent;
+        public $country;
+        public $city;
+        public $tipo;
+        public $institution;
+        public $grade;
+        public $voucher;
         /**
          *
          * Model Usuario
          * @return @id
          */
 
+        public function all(){
+            $sql = 'SELECT * from v_preinscripcion;';
+            try{
+                return ($rows = parent::query($sql)) ? $rows : false;
+            } catch(Exception $e) {
+                throw $e;
+            }
+        }
         public function add(){
-            $sql = 'INSERT INTO users(name,email,password,created_ad) VALUES(:name,:email,:password,:created_ad)';
-
-            $user =
-            [
-                'name'      =>  $this->name,
-                'email'     =>  $this->email,
-                'password'  =>  $this->password,
-                'created_ad'=>  $this->created_ad
-            ];
+            $sql = "CALL Insertar_preins(
+                '" . $this->firstName . "', 
+                '" . $this->lastName . "', 
+                '" . $this->dni . "', 
+                '" . $this->cellPhone . "', 
+                '" . $this->email . "',   
+                '" . $this->country . "', 
+                '" . $this->city . "',
+                '" . $this->tipo . "', 
+                '" . $this->yearStudent . "',
+                '" . $this->institution . "',
+                '" . $this->grade . "',
+                '" . $this->voucher . "');";
 
             try{
-                return ($this->id = parent::query($sql, $user)) ? $this->id : false;
-            }catch(Exception $e){
+                return ($rows = parent::query($sql)) ? $rows : false;
+            } catch(Exception $e) {
                 throw $e;
             }
         }
